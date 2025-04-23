@@ -1,0 +1,13 @@
+Listen on a port
+sudo nc -lvnp 8080
+
+
+for SYN flood
+sudo hping3 -S -p 8080 --flood <IP>
+
+
+Alerts are stored in
+/var/log/ids/alerts.json
+
+Run the script with sudo permission as the socket requires privilege to Run
+
